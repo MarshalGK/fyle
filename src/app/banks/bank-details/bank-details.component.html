@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-title>Bank Details</mat-card-title>
+  <mat-card-content>
+    <div class="bankDetailsList" *ngFor="let keys of detailKeys">
+      <div>{{keys | titlecase}}</div>
+      <div>: {{bankDetails[keys]}}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

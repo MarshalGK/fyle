@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.loader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 85px;
+  }
+}
+
+// Material theme style changes
+.mat-table {
+  width: 100%;
+}
+
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type,
+th.mat-header-cell:first-of-type {
+  text-align: center !important;
+}
+
+th.mat-header-cell {
+  text-align: center;
+  padding: 15px !important;
+}
+
+td.mat-cell {
+  padding: 15px !important;
+  font-size: 12px;
+}
